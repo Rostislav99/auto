@@ -1,0 +1,233 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1220px;
+    /* было 1200,сделали 1220,так как по 10 px забрали паддинги */
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*start header*/
+.header {
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 700px;
+    color: #fff;
+}
+
+.header__top {
+    padding: 47px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+
+}
+
+.phone:hover {
+    text-shadow: 3px 2px 3px greenyellow;
+}
+
+.header__content {
+    position: relative;
+}
+
+.header__title {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 107px;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.header__sub-title {
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.header__text {
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    /* 800px произвольная велечина,которая ограничивает текст,чтобы он переносился на следующую строку */
+}
+
+.button {
+    display: inline-block;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #5A0D67;
+    text-align: center;
+    padding: 14px 0;
+    transition: all .4s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.button:active {
+    transform: scale(.85);
+}
+
+.button:hover {
+    color: rgb(229, 255, 0);
+    background-color: rgb(141, 17, 143);
+    box-shadow: 0px 0px 20px rgb(63, 93, 18);
+
+}
+
+.header__social {
+    padding: 70px 0 20px;
+    margin-left: 66px;
+    display: flex;
+    align-content: center;
+}
+
+.header__social-link {
+    margin-left: 10px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.header__social-link:nth-child(1) {
+    margin-left: 0px;
+}
+
+.header__social-link:hover {
+    transform: translateY(-10px);
+}
+
+.header__images {
+    position: absolute;
+    width: 814px;
+    height: 462px;
+    right: 0;
+    bottom: -265px;
+}
+
+/*end header*/
+
+/*start services*/
+.services {
+    margin-top: 300px;
+}
+
+.title {
+    display: inline-block;
+    margin-bottom: 50px;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #21062A;
+    position: relative;
+
+
+}
+
+.title::after {
+    content: '';
+    border: 3px solid #21062A;
+    width: 80px;
+    position: absolute;
+    bottom: 50%;
+    margin-left: 17px;
+}
+
+.services__inner {
+    display: flex;
+
+}
+
+.services__content {
+    width: 505px;
+    margin-right: 96px;
+}
+
+.services__content-title {
+    margin-bottom: 12px;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4f0099;
+}
+
+.services__content-text {
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2C2B2B;
+}
+
+.services__content-text:nth-child(1) {
+    margin-bottom: 12px;
+}
+
+.services__content-text:nth-child(2) {
+    margin-bottom: 70px;
+}
+
+.services__content-text:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+.button button--decor {}
+
+.button {
+    margin-top: 50px;
+}
+
+.services__list {}
+
+.services__item {}
+
+.services__item-title {}
+
+.services__item-text {}
+
+/*end services*/
